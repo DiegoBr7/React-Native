@@ -20,10 +20,11 @@ export default function Home() {
 
 
   function remover(name: string) {
-    Alert.alert(`remover participante ${name} ?`,[
+    Alert.alert(`remover participante ${name} ?`,'',[
+      {
       text:'Sim',
-      onPress:() => Alert.alert("Deletado")
-    ])
+      onPress:() => Alert.alert("Deletado")}
+  ])
     console.log(`Vc clicou em remover participante ${name}`)
   }
 
